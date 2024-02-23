@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+header {
+    height: 80x;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    gap: 22px;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-weight: 800;
+    color: #000;
+}
+header, footer{
+    background-color: #EB6440;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 75px 0;
+}
+
+div {
+    flex-shrink: 1;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    height: 80px;
+}
+
+@media (max-width: 1208px) {
+    div {
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+        padding: 6px;
+    }
+    header, footer{
+        width: 100vw;
+        flex-direction: column;
+    }
+    img {
+        flex-shrink: 1;
+    }
+}
+
+@media (max-width: 280px) {
+    div {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+        padding: 6px;
+    }
+    header, footer{
+        width: 100vw;
+        flex-direction: column;
+    }
+    img {
+        flex-shrink: 1;
+    }
+}
